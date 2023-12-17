@@ -25,24 +25,24 @@
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" style="width: 400px;">
                     <button class="btn btn-outline-info" type="submit"><i class="bi bi-search"></i></button>
-                  </form>
+                </form>
                 <ul class="nav justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link" href="#productos">Ofertas</a>
+                        <a class="nav-link" href="#productos">OFERTAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#informacion">Información</a>
+                        <a class="nav-link" href="#informacion">INFORMACIÓN</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'logout' %}">Salir</a>
+                      <a class="nav-link" href="{% url 'logout' %}">SALIR</a>
                     </li>  
                     <li class="nav-item">
                       <a class="nav-link" href="{% url 'usuario' %}">{{ user.username }}</a>
                     </li> 
                   {% else %}
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'login' %}"><i class="bi bi-person-fill"></i>Ingresar</a>
+                      <a class="nav-link" href="{% url 'login' %}"><i class="bi bi-person-fill"></i>INGRESAR</a>
                     </li>  
                   {% endif %}   
                     <li class="nav-item">
@@ -96,12 +96,12 @@
     </section>
 
     <!-- Productos -->
-    <section id="servicios" class="fondo">
+    <section id="productos" class="fondo">
         <br><br>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="titulo-principal titulo-secundario">Servicios de eventos disponibles</h1>
+                    <h1 class="titulo-principal titulo-inicio">OFERTAS</h1>
                 </div>
             </div>
             <br><br><br>
